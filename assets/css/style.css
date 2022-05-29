@@ -1,4 +1,7 @@
-                    /* ========== CSS VARIABLE ========== */
+/* ========== IMPORT FONT ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+/* ========== CSS VARIABLE ========== */
 :root{
       /* font */
       --hero_title:46px;
@@ -406,8 +409,149 @@
   transition: all .3s ease-in-out;
 }
 
-                      /* =========== CONTACT ========== */
+/* =========== CONTACT ========== */
+.contact{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom:50px;
+}
+
+.contact__header{
+  width: 90%;
+  margin-bottom:18px;
+}
+
+.conntact__title{
+  text-align: center;
+}
+
+.contact__container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner__container{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.medsos__container{
+  width: 100%;
+  height: auto;
+  background-color: var(--bg_color);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.button__container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.order__btn{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.i{
+  font-size: var(--text);
+  color: var(--main_color);
+}
+
+.order__btn a{
+  text-decoration: none;
+  color: var(--main_color);
+}
+
+.form__container{
+  width: 70%;
+  background: var(--bg_color);
+  display:flex;
+  justify-content:center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form{
+  width: 90%;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input{
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: .5px solid var(--main_color);
+
+}
+
+textarea{
+  background: transparent;
+  border: .5px solid var(--main_color);
+}
+
+.submit{
+  width: 100px;
+  height: 40px;
+  outline:none;
+  border: none;
+  background: var(--main_color);
+  border-radius: 5px;
+  color: #fff;
+}
+
+
                       /* =========== FOOTER =========== */
+.footer{
+  width:100%;
+  height:180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: var(--bg_color);
+}
+                      
+.footer__container{
+  width:90%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap: 1rem;
+}
+
+.footer__item{
+  display:flex;
+  gap: 1rem;
+}
+
+.footer__item a{
+  font-size: var(--text_small);
+}
+
+.ft__img{
+  margin-top:12px;
+  cursor: pointer;
+}
+                      
+                      
                       /* ========== RESPONSIVE ========== */
 /* for small device */
 @media screen and (max-width: 582px){
@@ -517,12 +661,25 @@
   .product__card{
     width: 300px;
   }
+
+    /* footer */
+    .footer{
+      height: 120px;
+    }
+    .footer__container{
+      flex-direction: row;
+      justify-content:space-between;
+    }
 }
 
 @media screen and (min-width: 920px){
   .reason__container{
     grid-template-columns: repeat(3, 1fr);
   }
+    /* footer */
+    .footer__container{
+      width:80%;
+    }
 }
 
 @media screen and (min-width: 1350px){
@@ -601,4 +758,10 @@
     gap: 2.5rem;
   }
 
+
+     /* footer */
+
+     .footer__container{
+      width:70%;
+    }
 }
