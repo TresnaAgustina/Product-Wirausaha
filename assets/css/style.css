@@ -242,6 +242,7 @@
   justify-content:center;
   align-items: center;
   margin-bottom:100px;
+  scroll-margin: 100px;
 }
 
 .product__header{
@@ -547,7 +548,6 @@
   }
    .product__container{
     width: 80%;
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -600,7 +600,5 @@
     width: 70%;
     gap: 2.5rem;
   }
-  /* .product__card{
-    width: 300px;
-  } */
+
 }
