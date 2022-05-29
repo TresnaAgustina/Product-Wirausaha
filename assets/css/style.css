@@ -426,6 +426,7 @@
 
 .conntact__title{
   text-align: center;
+  font-size: var(--subtitle);
 }
 
 .contact__container{
