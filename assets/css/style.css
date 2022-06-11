@@ -38,7 +38,8 @@
     list-style: none;
   }
   
-  a, .nav__link {
+
+ .nav__link {
     text-decoration: none;
     color: var(--text-color);
   }
@@ -284,6 +285,11 @@
   overflow: hidden;
   background: #f5f5f5;
   margin: auto;
+}
+
+.medsos__container .link{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .product__card:hover{
@@ -689,7 +695,7 @@ textarea{
   }
   
   .inner__container{
-    flex-shrink: 5;
+    flex-shrink: 4;
   }
 }
 
@@ -771,6 +777,13 @@ textarea{
     gap: 2.5rem;
   }
 
+  .inner__container{
+    flex-shrink: 3;
+  }
+
+  .i{
+    font-size: var(--text);
+  }
 
      /* footer */
 
